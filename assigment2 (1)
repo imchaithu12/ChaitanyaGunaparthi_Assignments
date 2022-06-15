@@ -1,0 +1,1096 @@
+> use population
+switched to db population
+> db.createCollection("zip codes")
+{ "ok" : 1 }
+> db.zipcodes.find().pretty()
+{
+        "_id" : "01012",
+        "city" : "CHESTERFIELD",
+        "loc" : [
+                -72.833309,
+                42.38167
+        ],
+        "pop" : 177,
+        "state" : "MA"
+}
+{
+        "_id" : "01013",
+        "city" : "CHICOPEE",
+        "loc" : [
+                -72.607962,
+                42.162046
+        ],
+        "pop" : 23396,
+        "state" : "MA"
+}
+{
+        "_id" : "01020",
+        "city" : "CHICOPEE",
+        "loc" : [
+                -72.576142,
+                42.176443
+        ],
+        "pop" : 31495,
+        "state" : "MA"
+}
+{
+        "_id" : "01022",
+        "city" : "WESTOVER AFB",
+        "loc" : [
+                -72.558657,
+                42.196672
+        ],
+        "pop" : 1764,
+        "state" : "MA"
+}
+{
+        "_id" : "01026",
+        "city" : "CUMMINGTON",
+        "loc" : [
+                -72.905767,
+                42.435296
+        ],
+        "pop" : 1484,
+        "state" : "MA"
+}
+{
+        "_id" : "01027",
+        "city" : "MOUNT TOM",
+        "loc" : [
+                -72.679921,
+                42.264319
+        ],
+        "pop" : 16864,
+        "state" : "MA"
+}
+{
+        "_id" : "01028",
+        "city" : "EAST LONGMEADOW",
+        "loc" : [
+                -72.505565,
+                42.067203
+        ],
+        "pop" : 13367,
+        "state" : "MA"
+}
+{
+        "_id" : "01030",
+        "city" : "FEEDING HILLS",
+        "loc" : [
+                -72.675077,
+                42.07182
+        ],
+        "pop" : 11985,
+        "state" : "MA"
+}
+{
+        "_id" : "01007",
+        "city" : "BELCHERTOWN",
+        "loc" : [
+                -72.410953,
+                42.275103
+        ],
+        "pop" : 10579,
+        "state" : "MA"
+}
+{
+        "_id" : "01031",
+        "city" : "GILBERTVILLE",
+        "loc" : [
+                -72.198585,
+                42.332194
+        ],
+        "pop" : 2385,
+        "state" : "MA"
+}
+{
+        "_id" : "01032",
+        "city" : "GOSHEN",
+        "loc" : [
+                -72.844092,
+                42.466234
+        ],
+        "pop" : 122,
+        "state" : "MA"
+}
+{
+        "_id" : "01010",
+        "city" : "BRIMFIELD",
+        "loc" : [
+                -72.188455,
+                42.116543
+        ],
+        "pop" : 3706,
+        "state" : "MA"
+}
+{
+        "_id" : "01034",
+        "city" : "TOLLAND",
+        "loc" : [
+                -72.908793,
+                42.070234
+        ],
+        "pop" : 1652,
+        "state" : "MA"
+}
+{
+        "_id" : "01001",
+        "city" : "AGAWAM",
+        "loc" : [
+                -72.622739,
+                42.070206
+        ],
+        "pop" : 15338,
+        "state" : "MA"
+}
+{
+        "_id" : "01035",
+        "city" : "HADLEY",
+        "loc" : [
+                -72.571499,
+                42.36062
+        ],
+        "pop" : 4231,
+        "state" : "MA"
+}
+{
+        "_id" : "01038",
+        "city" : "HATFIELD",
+        "loc" : [
+                -72.616735,
+                42.38439
+        ],
+        "pop" : 3184,
+        "state" : "MA"
+}
+{
+        "_id" : "01039",
+        "city" : "HAYDENVILLE",
+        "loc" : [
+                -72.703178,
+                42.381799
+        ],
+        "pop" : 1387,
+        "state" : "MA"
+}
+{
+        "_id" : "01040",
+        "city" : "HOLYOKE",
+        "loc" : [
+                -72.626193,
+                42.202007
+        ],
+        "pop" : 43704,
+        "state" : "MA"
+}
+{
+        "_id" : "01050",
+        "city" : "HUNTINGTON",
+        "loc" : [
+                -72.873341,
+                42.265301
+        ],
+        "pop" : 2084,
+        "state" : "MA"
+}
+{
+        "_id" : "01002",
+        "city" : "CUSHMAN",
+        "loc" : [
+                -72.51565,
+                42.377017
+        ],
+        "pop" : 36963,
+        "state" : "MA"
+}
+Type "it" for more
+> it
+{
+        "_id" : "01036",
+        "city" : "HAMPDEN",
+        "loc" : [
+                -72.431823,
+                42.064756
+        ],
+        "pop" : 4709,
+        "state" : "MA"
+}
+{
+        "_id" : "01005",
+        "city" : "BARRE",
+        "loc" : [
+                -72.108354,
+                42.409698
+        ],
+        "pop" : 4546,
+        "state" : "MA"
+}
+{
+        "_id" : "01033",
+        "city" : "GRANBY",
+        "loc" : [
+                -72.520001,
+                42.255704
+        ],
+        "pop" : 5526,
+        "state" : "MA"
+}
+{
+        "_id" : "01011",
+        "city" : "CHESTER",
+        "loc" : [
+                -72.988761,
+                42.279421
+        ],
+        "pop" : 1688,
+        "state" : "MA"
+}
+{
+        "_id" : "01053",
+        "city" : "LEEDS",
+        "loc" : [
+                -72.703403,
+                42.354292
+        ],
+        "pop" : 1350,
+        "state" : "MA"
+}
+{
+        "_id" : "01054",
+        "city" : "LEVERETT",
+        "loc" : [
+                -72.499334,
+                42.46823
+        ],
+        "pop" : 1748,
+        "state" : "MA"
+}
+{
+        "_id" : "01056",
+        "city" : "LUDLOW",
+        "loc" : [
+                -72.471012,
+                42.172823
+        ],
+        "pop" : 18820,
+        "state" : "MA"
+}
+{
+        "_id" : "01057",
+        "city" : "MONSON",
+        "loc" : [
+                -72.319634,
+                42.101017
+        ],
+        "pop" : 8194,
+        "state" : "MA"
+}
+{
+        "_id" : "01060",
+        "city" : "FLORENCE",
+        "loc" : [
+                -72.654245,
+                42.324662
+        ],
+        "pop" : 27939,
+        "state" : "MA"
+}
+{
+        "_id" : "01068",
+        "city" : "OAKHAM",
+        "loc" : [
+                -72.051265,
+                42.348033
+        ],
+        "pop" : 1503,
+        "state" : "MA"
+}
+{
+        "_id" : "01069",
+        "city" : "PALMER",
+        "loc" : [
+                -72.328785,
+                42.176233
+        ],
+        "pop" : 9778,
+        "state" : "MA"
+}
+{
+        "_id" : "01070",
+        "city" : "PLAINFIELD",
+        "loc" : [
+                -72.918289,
+                42.514393
+        ],
+        "pop" : 571,
+        "state" : "MA"
+}
+{
+        "_id" : "01071",
+        "city" : "RUSSELL",
+        "loc" : [
+                -72.840343,
+                42.147063
+        ],
+        "pop" : 608,
+        "state" : "MA"
+}
+{
+        "_id" : "01082",
+        "city" : "WARE",
+        "loc" : [
+                -72.258285,
+                42.261831
+        ],
+        "pop" : 9808,
+        "state" : "MA"
+}
+{
+        "_id" : "01008",
+        "city" : "BLANDFORD",
+        "loc" : [
+                -72.936114,
+                42.182949
+        ],
+        "pop" : 1240,
+        "state" : "MA"
+}
+{
+        "_id" : "01085",
+        "city" : "MONTGOMERY",
+        "loc" : [
+                -72.754318,
+                42.129484
+        ],
+        "pop" : 40117,
+        "state" : "MA"
+}
+{
+        "_id" : "01089",
+        "city" : "WEST SPRINGFIELD",
+        "loc" : [
+                -72.641109,
+                42.115066
+        ],
+        "pop" : 27537,
+        "state" : "MA"
+}
+{
+        "_id" : "01092",
+        "city" : "WEST WARREN",
+        "loc" : [
+                -72.203639,
+                42.20734
+        ],
+        "pop" : 4441,
+        "state" : "MA"
+}
+{
+        "_id" : "01095",
+        "city" : "WILBRAHAM",
+        "loc" : [
+                -72.446415,
+                42.124506
+        ],
+        "pop" : 12635,
+        "state" : "MA"
+}
+{
+        "_id" : "01098",
+        "city" : "WORTHINGTON",
+        "loc" : [
+                -72.931427,
+                42.384293
+        ],
+        "pop" : 877,
+        "state" : "MA"
+}
+Type "it" for more
+> it
+{
+        "_id" : "01096",
+        "city" : "WILLIAMSBURG",
+        "loc" : [
+                -72.777989,
+                42.408522
+        ],
+        "pop" : 2295,
+        "state" : "MA"
+}
+{
+        "_id" : "01104",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.577769,
+                42.128848
+        ],
+        "pop" : 22115,
+        "state" : "MA"
+}
+{
+        "_id" : "01103",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.588735,
+                42.1029
+        ],
+        "pop" : 2323,
+        "state" : "MA"
+}
+{
+        "_id" : "01077",
+        "city" : "SOUTHWICK",
+        "loc" : [
+                -72.770588,
+                42.051099
+        ],
+        "pop" : 7667,
+        "state" : "MA"
+}
+{
+        "_id" : "01105",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.578312,
+                42.099931
+        ],
+        "pop" : 14970,
+        "state" : "MA"
+}
+{
+        "_id" : "01075",
+        "city" : "SOUTH HADLEY",
+        "loc" : [
+                -72.581137,
+                42.237537
+        ],
+        "pop" : 16699,
+        "state" : "MA"
+}
+{
+        "_id" : "01072",
+        "city" : "SHUTESBURY",
+        "loc" : [
+                -72.421342,
+                42.481968
+        ],
+        "pop" : 1533,
+        "state" : "MA"
+}
+{
+        "_id" : "01109",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.554349,
+                42.114455
+        ],
+        "pop" : 32635,
+        "state" : "MA"
+}
+{
+        "_id" : "01118",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.527445,
+                42.092937
+        ],
+        "pop" : 14618,
+        "state" : "MA"
+}
+{
+        "_id" : "01119",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.51211,
+                42.12473
+        ],
+        "pop" : 13040,
+        "state" : "MA"
+}
+{
+        "_id" : "01080",
+        "city" : "THREE RIVERS",
+        "loc" : [
+                -72.362352,
+                42.181894
+        ],
+        "pop" : 2425,
+        "state" : "MA"
+}
+{
+        "_id" : "01128",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.488903,
+                42.094397
+        ],
+        "pop" : 3272,
+        "state" : "MA"
+}
+{
+        "_id" : "01151",
+        "city" : "INDIAN ORCHARD",
+        "loc" : [
+                -72.505048,
+                42.153225
+        ],
+        "pop" : 8702,
+        "state" : "MA"
+}
+{
+        "_id" : "01129",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.487622,
+                42.122263
+        ],
+        "pop" : 6831,
+        "state" : "MA"
+}
+{
+        "_id" : "01220",
+        "city" : "ADAMS",
+        "loc" : [
+                -73.117225,
+                42.622319
+        ],
+        "pop" : 9901,
+        "state" : "MA"
+}
+{
+        "_id" : "01223",
+        "city" : "BECKET",
+        "loc" : [
+                -73.120325,
+                42.359363
+        ],
+        "pop" : 1070,
+        "state" : "MA"
+}
+{
+        "_id" : "01201",
+        "city" : "PITTSFIELD",
+        "loc" : [
+                -73.247088,
+                42.453086
+        ],
+        "pop" : 50655,
+        "state" : "MA"
+}
+{
+        "_id" : "01081",
+        "city" : "WALES",
+        "loc" : [
+                -72.204592,
+                42.062734
+        ],
+        "pop" : 1732,
+        "state" : "MA"
+}
+{
+        "_id" : "01107",
+        "city" : "SPRINGFIELD",
+        "loc" : [
+                -72.606544,
+                42.117907
+        ],
+        "pop" : 12739,
+        "state" : "MA"
+}
+{
+        "_id" : "01222",
+        "city" : "ASHLEY FALLS",
+        "loc" : [
+                -73.320195,
+                42.059552
+        ],
+        "pop" : 561,
+        "state" : "MA"
+}
+Type "it" for more
+> db.zipcodes.find({$and:[{city:"ATLANTA"},{state:"GA"}]}).pretty()
+{
+        "_id" : "30303",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.388846,
+                33.752504
+        ],
+        "pop" : 1845,
+        "state" : "GA"
+}
+{
+        "_id" : "30306",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.351418,
+                33.786027
+        ],
+        "pop" : 20081,
+        "state" : "GA"
+}
+{
+        "_id" : "30308",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.375744,
+                33.771839
+        ],
+        "pop" : 8549,
+        "state" : "GA"
+}
+{
+        "_id" : "30309",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.388338,
+                33.798407
+        ],
+        "pop" : 14766,
+        "state" : "GA"
+}
+{
+        "_id" : "30305",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.385145,
+                33.831963
+        ],
+        "pop" : 19122,
+        "state" : "GA"
+}
+{
+        "_id" : "30311",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.470219,
+                33.722957
+        ],
+        "pop" : 34880,
+        "state" : "GA"
+}
+{
+        "_id" : "30313",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.39352,
+                33.76825
+        ],
+        "pop" : 8038,
+        "state" : "GA"
+}
+{
+        "_id" : "30312",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.378125,
+                33.746749
+        ],
+        "pop" : 17683,
+        "state" : "GA"
+}
+{
+        "_id" : "30314",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.425546,
+                33.756103
+        ],
+        "pop" : 26649,
+        "state" : "GA"
+}
+{
+        "_id" : "30315",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.380771,
+                33.705062
+        ],
+        "pop" : 41061,
+        "state" : "GA"
+}
+{
+        "_id" : "30307",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.335957,
+                33.769138
+        ],
+        "pop" : 16330,
+        "state" : "GA"
+}
+{
+        "_id" : "30310",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.423173,
+                33.727849
+        ],
+        "pop" : 34017,
+        "state" : "GA"
+}
+{
+        "_id" : "30318",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.445432,
+                33.786454
+        ],
+        "pop" : 53894,
+        "state" : "GA"
+}
+{
+        "_id" : "30316",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.333913,
+                33.721686
+        ],
+        "pop" : 34668,
+        "state" : "GA"
+}
+{
+        "_id" : "30317",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.31685,
+                33.749788
+        ],
+        "pop" : 16395,
+        "state" : "GA"
+}
+{
+        "_id" : "30319",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.335091,
+                33.868728
+        ],
+        "pop" : 32138,
+        "state" : "GA"
+}
+{
+        "_id" : "30327",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.419966,
+                33.862723
+        ],
+        "pop" : 18467,
+        "state" : "GA"
+}
+{
+        "_id" : "30336",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.510028,
+                33.78534
+        ],
+        "pop" : 1228,
+        "state" : "GA"
+}
+{
+        "_id" : "30326",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.358232,
+                33.848168
+        ],
+        "pop" : 125,
+        "state" : "GA"
+}
+{
+        "_id" : "30324",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.354867,
+                33.820609
+        ],
+        "pop" : 15044,
+        "state" : "GA"
+}
+Type "it" for more
+> db.zipcodes.aggregate([{$match:{city:"ATLANTA",state:"GA"}}]).pretty()
+{
+        "_id" : "30303",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.388846,
+                33.752504
+        ],
+        "pop" : 1845,
+        "state" : "GA"
+}
+{
+        "_id" : "30306",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.351418,
+                33.786027
+        ],
+        "pop" : 20081,
+        "state" : "GA"
+}
+{
+        "_id" : "30308",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.375744,
+                33.771839
+        ],
+        "pop" : 8549,
+        "state" : "GA"
+}
+{
+        "_id" : "30309",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.388338,
+                33.798407
+        ],
+        "pop" : 14766,
+        "state" : "GA"
+}
+{
+        "_id" : "30305",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.385145,
+                33.831963
+        ],
+        "pop" : 19122,
+        "state" : "GA"
+}
+{
+        "_id" : "30311",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.470219,
+                33.722957
+        ],
+        "pop" : 34880,
+        "state" : "GA"
+}
+{
+        "_id" : "30313",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.39352,
+                33.76825
+        ],
+        "pop" : 8038,
+        "state" : "GA"
+}
+{
+        "_id" : "30312",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.378125,
+                33.746749
+        ],
+        "pop" : 17683,
+        "state" : "GA"
+}
+{
+        "_id" : "30314",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.425546,
+                33.756103
+        ],
+        "pop" : 26649,
+        "state" : "GA"
+}
+{
+        "_id" : "30315",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.380771,
+                33.705062
+        ],
+        "pop" : 41061,
+        "state" : "GA"
+}
+{
+        "_id" : "30307",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.335957,
+                33.769138
+        ],
+        "pop" : 16330,
+        "state" : "GA"
+}
+{
+        "_id" : "30310",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.423173,
+                33.727849
+        ],
+        "pop" : 34017,
+        "state" : "GA"
+}
+{
+        "_id" : "30318",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.445432,
+                33.786454
+        ],
+        "pop" : 53894,
+        "state" : "GA"
+}
+{
+        "_id" : "30316",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.333913,
+                33.721686
+        ],
+        "pop" : 34668,
+        "state" : "GA"
+}
+{
+        "_id" : "30317",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.31685,
+                33.749788
+        ],
+        "pop" : 16395,
+        "state" : "GA"
+}
+{
+        "_id" : "30319",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.335091,
+                33.868728
+        ],
+        "pop" : 32138,
+        "state" : "GA"
+}
+{
+        "_id" : "30327",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.419966,
+                33.862723
+        ],
+        "pop" : 18467,
+        "state" : "GA"
+}
+{
+        "_id" : "30336",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.510028,
+                33.78534
+        ],
+        "pop" : 1228,
+        "state" : "GA"
+}
+{
+        "_id" : "30326",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.358232,
+                33.848168
+        ],
+        "pop" : 125,
+        "state" : "GA"
+}
+{
+        "_id" : "30324",
+        "city" : "ATLANTA",
+        "loc" : [
+                -84.354867,
+                33.820609
+        ],
+        "pop" : 15044,
+        "state" : "GA"
+}
+Type "it" for more
+>  db.zipcodes.aggregate([{group:{_id:"$state",Totalpopulation:{$sum:"$pop"}}}]).pretty()
+uncaught exception: Error: command failed: {
+        "ok" : 0,
+        "errmsg" : "Unrecognized pipeline stage name: 'group'",
+        "code" : 40324,
+        "codeName" : "Location40324"
+} with original command request: {
+        "aggregate" : "zipcodes",
+        "pipeline" : [
+                {
+                        "group" : {
+                                "_id" : "$state",
+                                "Totalpopulation" : {
+                                        "$sum" : "$pop"
+                                }
+                        }
+                }
+        ],
+        "cursor" : {
+
+        },
+        "lsid" : {
+                "id" : UUID("d1136dea-f168-40be-80d0-2afc8b1d240b")
+        }
+} on connection: connection to 127.0.0.1:27017 : aggregate failed :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+doassert@src/mongo/shell/assert.js:18:14
+_assertCommandWorked@src/mongo/shell/assert.js:737:17
+assert.commandWorked@src/mongo/shell/assert.js:829:16
+DB.prototype._runAggregate@src/mongo/shell/db.js:281:5
+DBCollection.prototype.aggregate@src/mongo/shell/collection.js:1058:12
+@(shell):1:1
+> db.zipcodes.aggregate([{$group:{_id:"$state",Totalpopulation:{$sum:"$pop"}}}]).pretty()
+{ "_id" : "OK", "Totalpopulation" : 3145585 }
+{ "_id" : "AZ", "Totalpopulation" : 3665228 }
+{ "_id" : "NV", "Totalpopulation" : 1201833 }
+{ "_id" : "MD", "Totalpopulation" : 4781379 }
+{ "_id" : "KY", "Totalpopulation" : 3675484 }
+{ "_id" : "CA", "Totalpopulation" : 29754890 }
+{ "_id" : "CO", "Totalpopulation" : 3293755 }
+{ "_id" : "MO", "Totalpopulation" : 5110648 }
+{ "_id" : "MI", "Totalpopulation" : 9295297 }
+{ "_id" : "TX", "Totalpopulation" : 16984601 }
+{ "_id" : "WV", "Totalpopulation" : 1793146 }
+{ "_id" : "MS", "Totalpopulation" : 2573216 }
+{ "_id" : "OH", "Totalpopulation" : 10846517 }
+{ "_id" : "DE", "Totalpopulation" : 666168 }
+{ "_id" : "MA", "Totalpopulation" : 6016425 }
+{ "_id" : "DC", "Totalpopulation" : 606900 }
+{ "_id" : "TN", "Totalpopulation" : 4876457 }
+{ "_id" : "SC", "Totalpopulation" : 3486703 }
+{ "_id" : "VA", "Totalpopulation" : 6181479 }
+{ "_id" : "SD", "Totalpopulation" : 695397 }
+Type "it" for more
+> db.zipcodes.aggregate([{$group:{_id:"$state",Totalpopulation:{$sum:"$pop"}}},{$sort:{Totalpopulation:-1}}]).pretty()
+{ "_id" : "CA", "Totalpopulation" : 29754890 }
+{ "_id" : "NY", "Totalpopulation" : 17990402 }
+{ "_id" : "TX", "Totalpopulation" : 16984601 }
+{ "_id" : "FL", "Totalpopulation" : 12686644 }
+{ "_id" : "PA", "Totalpopulation" : 11881643 }
+{ "_id" : "IL", "Totalpopulation" : 11427576 }
+{ "_id" : "OH", "Totalpopulation" : 10846517 }
+{ "_id" : "MI", "Totalpopulation" : 9295297 }
+{ "_id" : "NJ", "Totalpopulation" : 7730188 }
+{ "_id" : "NC", "Totalpopulation" : 6628637 }
+{ "_id" : "GA", "Totalpopulation" : 6478216 }
+{ "_id" : "VA", "Totalpopulation" : 6181479 }
+{ "_id" : "MA", "Totalpopulation" : 6016425 }
+{ "_id" : "IN", "Totalpopulation" : 5544136 }
+{ "_id" : "MO", "Totalpopulation" : 5110648 }
+{ "_id" : "WI", "Totalpopulation" : 4891769 }
+{ "_id" : "TN", "Totalpopulation" : 4876457 }
+{ "_id" : "WA", "Totalpopulation" : 4866692 }
+{ "_id" : "MD", "Totalpopulation" : 4781379 }
+{ "_id" : "MN", "Totalpopulation" : 4372982 }
+Type "it" for more
+>
+
+
+
+
+

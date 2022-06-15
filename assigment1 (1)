@@ -1,0 +1,445 @@
+>  use mongo_practice
+switched to db mongo_practice
+> db.createCollection("movies")
+{ "ok" : 1 }
+> show collections
+movies
+> db.movies.insertMany(
+... ... [
+... ... {
+... ... title:"Fight Club",
+... ... writer:"Chuck Palahniuko",
+... ... year:"1999",
+... ... actors:
+... ... ["Brad Pitt",
+... ... "Edward Norton"]
+... ... }
+... ... ,
+... ... {title:"Pulp Fictiob",
+... ... writer:"Quentin Tarantino",
+... ... year:"1994",
+... ... actors:
+... ... ["John Travolta",
+... ... "Uma Thurman"
+... ... ]
+... ... },
+... ... {
+... ... title:"Inglorious Basterds",
+... ... writer:"Quentin Tarantino",
+... ... year:"2009",
+... ... actors:[
+... ... "Brad Pitt",
+... ... "Diane Kruger",
+... ... "Eli Roth"
+... ... ]
+... ... },
+... ... {title:"The Hobbit: An Unexpected Journey",
+... ... writer:"J.R.R. Tolkein",
+... ... year:"2012",
+... ... franchise:"The Hobbit",
+... ... },
+... ... {title:"The Hobbit: The Desolation of Smaug,
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):35:44
+> db.movies.insertMany( [ { title:"Fight Club", writer:"Chuck Palahniuko", year:"1999", actors: ["Brad Pitt", "Edward Norton"] } , {title:"Pulp Fictiob", writer:"Quentin Tarantino", year:"1994", actors: ["John Travolta", "Uma Thurman" ] }, { title:"Inglorious Basterds", writer:"Quentin Tarantino", year:"2009", actors:[ "Brad Pitt", "Diane Kruger", "Eli Roth" ] }, {title:"The Hobbit: An Unexpected Journey", writer:"J.R.R. Tolkein", year:"2012", franchise:"The Hobbit", }, {title:"The Hobbit: The Desolation of Smaug",
+... ... writer:"J.R.R. Tolkein",
+... ... year:"2013",
+... ... franchise:"The Hobbit"},
+... ... {title:"The Hobbit:The Battle of the Five Armies",
+... ... eriter:"J.R.R. Tolkein",
+... ... year:"2012",
+... ... franchise:"The Hobbit",
+... ... synopsis:"Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."},
+... ... {title:"Pee Wee Herman's Big Adventure},
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):10:40
+> db.movies.insertMany( [ { title:"Fight Club", writer:"Chuck Palahniuko", year:"1999", actors: ["Brad Pitt", "Edward Norton"] } , {title:"Pulp Fictiob", writer:"Quentin Tarantino", year:"1994", actors: ["John Travolta", "Uma Thurman" ] }, { title:"Inglorious Basterds", writer:"Quentin Tarantino", year:"2009", actors:[ "Brad Pitt", "Diane Kruger", "Eli Roth" ] }, {title:"The Hobbit: An Unexpected Journey", writer:"J.R.R. Tolkein", year:"2012", franchise:"The Hobbit", }, {title:"The Hobbit: The Desolation of Smaug", writer:"J.R.R. Tolkein", year:"2013", franchise:"The Hobbit"}, {title:"The Hobbit:The Battle of the Five Armies", eriter:"J.R.R. Tolkein", year:"2012", franchise:"The Hobbit", synopsis:"Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."}, {title:"Pee Wee Herman's Big Adventure"},
+... ... {title:"Avatar"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62a76d4d0b26793f3a097abc"),
+                ObjectId("62a76d4d0b26793f3a097abd"),
+                ObjectId("62a76d4d0b26793f3a097abe"),
+                ObjectId("62a76d4d0b26793f3a097abf"),
+                ObjectId("62a76d4d0b26793f3a097ac0"),
+                ObjectId("62a76d4d0b26793f3a097ac1"),
+                ObjectId("62a76d4d0b26793f3a097ac2"),
+                ObjectId("62a76d4d0b26793f3a097ac3")
+        ]
+}
+> db.movies.find()
+{ "_id" : ObjectId("62a76d4d0b26793f3a097abc"), "title" : "Fight Club", "writer" : "Chuck Palahniuko", "year" : "1999", "actors" : [ "Brad Pitt", "Edward Norton" ] }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097abd"), "title" : "Pulp Fictiob", "writer" : "Quentin Tarantino", "year" : "1994", "actors" : [ "John Travolta", "Uma Thurman" ] }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097abe"), "title" : "Inglorious Basterds", "writer" : "Quentin Tarantino", "year" : "2009", "actors" : [ "Brad Pitt", "Diane Kruger", "Eli Roth" ] }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097abf"), "title" : "The Hobbit: An Unexpected Journey", "writer" : "J.R.R. Tolkein", "year" : "2012", "franchise" : "The Hobbit" }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac0"), "title" : "The Hobbit: The Desolation of Smaug", "writer" : "J.R.R. Tolkein", "year" : "2013", "franchise" : "The Hobbit" }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac1"), "title" : "The Hobbit:The Battle of the Five Armies", "eriter" : "J.R.R. Tolkein", "year" : "2012", "franchise" : "The Hobbit", "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness." }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac2"), "title" : "Pee Wee Herman's Big Adventure" }
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac3"), "title" : "Avatar" }
+>  db.movies.find().pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abd"),
+        "title" : "Pulp Fictiob",
+        "writer" : "Quentin Tarantino",
+        "year" : "1994",
+        "actors" : [
+                "John Travolta",
+                "Uma Thurman"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abe"),
+        "title" : "Inglorious Basterds",
+        "writer" : "Quentin Tarantino",
+        "year" : "2009",
+        "actors" : [
+                "Brad Pitt",
+                "Diane Kruger",
+                "Eli Roth"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abf"),
+        "title" : "The Hobbit: An Unexpected Journey",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac0"),
+        "title" : "The Hobbit: The Desolation of Smaug",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2013",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac2"),
+        "title" : "Pee Wee Herman's Big Adventure"
+}
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac3"), "title" : "Avatar" }
+> db.movies.find({actor:"Brad Pitt"}).pretty()
+> db.movies.find({actors:"Brad Pitt"}).pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abe"),
+        "title" : "Inglorious Basterds",
+        "writer" : "Quentin Tarantino",
+        "year" : "2009",
+        "actors" : [
+                "Brad Pitt",
+                "Diane Kruger",
+                "Eli Roth"
+        ]
+}
+> db.movies.find({franchise:"The Hobbit"}).pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abf"),
+        "title" : "The Hobbit: An Unexpected Journey",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac0"),
+        "title" : "The Hobbit: The Desolation of Smaug",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2013",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+> db.movies.find({year:{$gt:"1900",$lt:"2000"}}).pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abd"),
+        "title" : "Pulp Fictiob",
+        "writer" : "Quentin Tarantino",
+        "year" : "1994",
+        "actors" : [
+                "John Travolta",
+                "Uma Thurman"
+        ]
+}
+> db.movies.find({$or:[{year:{$lt:"2000"}},{year:{$gt:"2010"}}]}).pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abd"),
+        "title" : "Pulp Fictiob",
+        "writer" : "Quentin Tarantino",
+        "year" : "1994",
+        "actors" : [
+                "John Travolta",
+                "Uma Thurman"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abf"),
+        "title" : "The Hobbit: An Unexpected Journey",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac0"),
+        "title" : "The Hobbit: The Desolation of Smaug",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2013",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+> db.movies.find({year:{$gt:1900,$lt:2000}}).pretty()
+> db.movies.find({year:{$gt:1900,$lt:2000}}).pretty()
+>
+>
+> db.movies.find({$or:[{year:{$lt:2000}},{year:{$gt:2010}}]}).pretty()
+>  db.movies.find().pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abd"),
+        "title" : "Pulp Fictiob",
+        "writer" : "Quentin Tarantino",
+        "year" : "1994",
+        "actors" : [
+                "John Travolta",
+                "Uma Thurman"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abe"),
+        "title" : "Inglorious Basterds",
+        "writer" : "Quentin Tarantino",
+        "year" : "2009",
+        "actors" : [
+                "Brad Pitt",
+                "Diane Kruger",
+                "Eli Roth"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abf"),
+        "title" : "The Hobbit: An Unexpected Journey",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac0"),
+        "title" : "The Hobbit: The Desolation of Smaug",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2013",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac2"),
+        "title" : "Pee Wee Herman's Big Adventure"
+}
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac3"), "title" : "Avatar" }
+>  db.movies.find().pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abd"),
+        "title" : "Pulp Fictiob",
+        "writer" : "Quentin Tarantino",
+        "year" : "1994",
+        "actors" : [
+                "John Travolta",
+                "Uma Thurman"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abe"),
+        "title" : "Inglorious Basterds",
+        "writer" : "Quentin Tarantino",
+        "year" : "2009",
+        "actors" : [
+                "Brad Pitt",
+                "Diane Kruger",
+                "Eli Roth"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abf"),
+        "title" : "The Hobbit: An Unexpected Journey",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac0"),
+        "title" : "The Hobbit: The Desolation of Smaug",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2013",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac2"),
+        "title" : "Pee Wee Herman's Big Adventure"
+}
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac3"), "title" : "Avatar" }
+> db.movies.find({synopsis:{$regex:"Bilbo"}}).pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+> db.movies.find({synopsis:{$regex:"Gandalf"}}).pretty()
+> db.movies.find({synopsis:{$nin:"Bilbo"},synopsis:{$regex:"Gandalf"}}).pretty()
+> db.movies.find().pretty()
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abc"),
+        "title" : "Fight Club",
+        "writer" : "Chuck Palahniuko",
+        "year" : "1999",
+        "actors" : [
+                "Brad Pitt",
+                "Edward Norton"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abd"),
+        "title" : "Pulp Fictiob",
+        "writer" : "Quentin Tarantino",
+        "year" : "1994",
+        "actors" : [
+                "John Travolta",
+                "Uma Thurman"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abe"),
+        "title" : "Inglorious Basterds",
+        "writer" : "Quentin Tarantino",
+        "year" : "2009",
+        "actors" : [
+                "Brad Pitt",
+                "Diane Kruger",
+                "Eli Roth"
+        ]
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097abf"),
+        "title" : "The Hobbit: An Unexpected Journey",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac0"),
+        "title" : "The Hobbit: The Desolation of Smaug",
+        "writer" : "J.R.R. Tolkein",
+        "year" : "2013",
+        "franchise" : "The Hobbit"
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac1"),
+        "title" : "The Hobbit:The Battle of the Five Armies",
+        "eriter" : "J.R.R. Tolkein",
+        "year" : "2012",
+        "franchise" : "The Hobbit",
+        "synopsis" : "Bilbo and Compony are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of rising darkness."
+}
+{
+        "_id" : ObjectId("62a76d4d0b26793f3a097ac2"),
+        "title" : "Pee Wee Herman's Big Adventure"
+}
+{ "_id" : ObjectId("62a76d4d0b26793f3a097ac3"), "title" : "Avatar" }
+> db.movies.remove({title:"Pee Wee Herman's Big Adventure"})
+WriteResult({ "nRemoved" : 1 })
+>  db.movies.remove({title:"Avatar"})
+WriteResult({ "nRemoved" : 1 })
